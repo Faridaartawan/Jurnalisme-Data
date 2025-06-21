@@ -27,11 +27,8 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!--Search Script-->
-  <script async src="https://cse.google.com/cse.js?cx=7528d1a09279c47d7"></script><!--/Search Script-->
-
 </head>
-<div class="gcse-searchresults-only"></div>
+
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
@@ -45,7 +42,7 @@
       <!--Navbar Section-->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#" class="active">Home</a></li>
+          <li><a href="/index.html" class="active">Home</a></li>
           <li class="dropdown"><a href="#project"><span>Project Kami</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="/modul.html">Modul Pembelajaran</a></li>
@@ -105,7 +102,7 @@
     <!-- /project Section -->
     <section id="project" class="project section">
       <div class="row feature-boxes">
-          <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+          <div href="/artikel.html" class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
             <div class="feature-box">
               <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
                 <i class="bi bi-journals"></i>
@@ -117,7 +114,7 @@
             </div>
           </div>
     
-          <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+          <div href="/video.html" class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="feature-box">
               <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
                 <i class="bi bi-play-btn-fill"></i>
@@ -129,7 +126,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div href="/artikel.html" class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
             <div class="feature-box">
               <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
                 <i class="bi bi-newspaper"></i>
@@ -455,8 +452,8 @@
         <div class="col-lg-4 col-md-4 footer-links text-center d-flex flex-column align-items-center">
           <h4>Useful Links</h4>
           <ul class="list-unstyled d-flex flex-column align-items-center">
-            <li><a href="#" class="text-decoration-none">Home</a></li>
-            <li><a href="#" class="text-decoration-none">Tentang Kami</a></li>
+            <li><a href="/index.html" class="text-decoration-none">Home</a></li>
+            <li><a href="#about" class="text-decoration-none">Tentang Kami</a></li>
             <li><a href="#" class="text-decoration-none">Kontak</a></li>
             <li><a href="#" class="text-decoration-none">Kebijakan Privasi</a></li>
           </ul>
@@ -466,9 +463,9 @@
         <div class="col-lg-4 col-md-4 footer-links text-center d-flex flex-column align-items-center">
           <h4>Our Project</h4>
           <ul class="list-unstyled d-flex flex-column align-items-center">
-            <li><a href="#" class="text-decoration-none">Modul Pembelajaran</a></li>
-            <li><a href="#" class="text-decoration-none">Video Pembelajaran</a></li>
-            <li><a href="#" class="text-decoration-none">Artikel</a></li>
+            <li><a href="/modul.html" class="text-decoration-none">Modul Pembelajaran</a></li>
+            <li><a href="/video.html" class="text-decoration-none">Video Pembelajaran</a></li>
+            <li><a href="/artikel.html" class="text-decoration-none">Artikel</a></li>
           </ul>
         </div>
       </div> 
@@ -497,22 +494,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <!--JS Search Script-->
-  <script>
-    document.getElementById("customSearchForm").addEventListener("submit", function (e) {
-      e.preventDefault(); // Mencegah reload halaman
-  
-      const query = document.getElementById("gcsInput").value;
-  
-      if (window.google && google.search && google.search.cse) {
-        const element = google.search.cse.element.getElement("searchresults-only0");
-        if (element) {
-          element.execute(query); // Menjalankan pencarian
-        }
-      }
-    });
-  </script>
   
 </body>
 

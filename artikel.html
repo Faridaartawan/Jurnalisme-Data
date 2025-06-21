@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <!--Ganti Nama Judul Tulisan-->
-  <title>Artikel</title>
+  <title>Jurnalisme Data</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -28,11 +27,8 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!--Search Script-->
-  <script async src="https://cse.google.com/cse.js?cx=7528d1a09279c47d7"></script><!--/Search Script-->
-
 </head>
-<div class="gcse-searchresults-only"></div>
+
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
@@ -40,21 +36,21 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <img src="assets/img/logo.png" alt="jurnalisme-data">
         <h1 class="sitename">Jurnalisme Data</h1><span>.</span>
       </a>
-      <!--NavBar Section-->
+      <!--Navbar Section-->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li class="dropdown"><a href="#"><span>Project Kami</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="/index.html" class="active">Home</a></li>
+          <li class="dropdown"><a href="#project"><span>Project Kami</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Modul Pembelajaran</a></li>
-              <li><a href="#">Video Pembelajaran</a></li>
-              <li><a href="#">Artikel Mahasiswa</a></li>
+              <li><a href="/modul.html">Modul Pembelajaran</a></li>
+              <li><a href="/video.html">Video Pembelajaran</a></li>
+              <li><a href="/artikel.html">Artikel Mahasiswa</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href=""><span>Tentang Kami</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a><span>Tentang Kami</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
              <li><a href="#about">Jurnalisme Data</a></li>
              <li><a href="#mataKuliah">Mata Kuliah Jurnalisme Data</a></li>
@@ -66,14 +62,6 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <form class="d-flex mb-4" id="customSearchForm" role="search">
-        <input class="form-control me-2" type="search" id="gcsInput" placeholder="Cari di Jurnalisme Data..." aria-label="Search">
-        <button class="btn btn-primary d-flex align-items-center" type="submit">
-          <i class="bi bi-search me-2"></i> Search
-        </button>
-      </form>
-
     </div>
   </header>
 
@@ -204,8 +192,8 @@
         <div class="col-lg-4 col-md-4 footer-links text-center d-flex flex-column align-items-center">
           <h4>Useful Links</h4>
           <ul class="list-unstyled d-flex flex-column align-items-center">
-            <li><a href="#" class="text-decoration-none">Home</a></li>
-            <li><a href="#" class="text-decoration-none">Tentang Kami</a></li>
+            <li><a href="/index.html" class="text-decoration-none">Home</a></li>
+            <li><a href="#about" class="text-decoration-none">Tentang Kami</a></li>
             <li><a href="#" class="text-decoration-none">Kontak</a></li>
             <li><a href="#" class="text-decoration-none">Kebijakan Privasi</a></li>
           </ul>
@@ -215,9 +203,9 @@
         <div class="col-lg-4 col-md-4 footer-links text-center d-flex flex-column align-items-center">
           <h4>Our Project</h4>
           <ul class="list-unstyled d-flex flex-column align-items-center">
-            <li><a href="#" class="text-decoration-none">Modul Pembelajaran</a></li>
-            <li><a href="#" class="text-decoration-none">Video Pembelajaran</a></li>
-            <li><a href="#" class="text-decoration-none">Artikel</a></li>
+            <li><a href="/modul.html" class="text-decoration-none">Modul Pembelajaran</a></li>
+            <li><a href="/video.html" class="text-decoration-none">Video Pembelajaran</a></li>
+            <li><a href="/artikel.html" class="text-decoration-none">Artikel</a></li>
           </ul>
         </div>
       </div> 
@@ -246,22 +234,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <!--JS Search Script-->
-  <script>
-    document.getElementById("customSearchForm").addEventListener("submit", function (e) {
-      e.preventDefault(); // Mencegah reload halaman
-  
-      const query = document.getElementById("gcsInput").value;
-  
-      if (window.google && google.search && google.search.cse) {
-        const element = google.search.cse.element.getElement("searchresults-only0");
-        if (element) {
-          element.execute(query); // Menjalankan pencarian
-        }
-      }
-    });
-  </script>
   
 </body>
 
