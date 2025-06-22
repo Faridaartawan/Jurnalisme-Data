@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +28,59 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!--Sytle text justify-->
+  <style>
+    .teks-justify p {
+      text-align: justify;
+      font-size: 16px;
+      margin: 24px;
+    }
+  </style>
+
+  <!--Style Center-->
+  <style>
+    .teks-Center {
+      text-align: center;
+      font-size: 20px;
+      margin: 24px;
+    }
+  </style>
+
+  <!--Text Gold-->
+  <style>
+    .text-gold {
+      color: #735d14 !important;
+      }
+    </style>
+
+  <!--Style ukuran image-->
+  <style>
+  .gambar-seragam {
+    width: 60%;
+    max-height: 60%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+
+  <!--Custom padding 1-->
+  <style>
+    .custom-padding1 {
+    padding: 20px;
+    }
+  </style>
+  
+  <!--Custom title 1-->
+  <style>
+    .custom-title1 {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    }
+  </style>
+
+
 
 </head>
 
@@ -67,38 +121,22 @@
   </header>
 
   <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1 class="heading-title">Artikel Mahasiswa</h1>
-              <p class="mb-0">
-                Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo
-                odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum
-                debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat
-                ipsum dolorem.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Page Title -->
-
-   <!-- features Section -->
-   <section id="features" class="features section">
+  
+  <div class="page-title">
+  
+  </div>
+    
+   <!-- Testimonials Section -->
+   <section id="testimonials" class="testimonials custom-title1">
 
     <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Artikel Terbaru</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    <div class="text-center d-block mb-4" data-aos="fade-up">
+    <h2>Artikel Terbaru</h2>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="features-slider swiper init-swiper">
+      <div class="testimonials-slider swiper init-swiper">
         <script type="application/json" class="swiper-config">
           {
             "loop": true,
@@ -125,13 +163,18 @@
         </script>
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="feature-card">
-              <div class="feature-content">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
                 <p>
                   <i class="bi bi-quote quote-icon"></i>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
+              <div class="testimonial-profile">
+                <div class="rating">
+                  
+                </div>
+                <div class="profile-info">
                   <div>
                     <h3>Robert Johnson</h3>
                     <h4>Marketing Director</h4>
@@ -142,14 +185,19 @@
           </div><!-- End testimonial item -->
 
           <div class="swiper-slide">
-            <div class="feature-card">
-              <div class="feature-content">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
                 <p>
                   <i class="bi bi-quote quote-icon"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et maecenas aliquam.
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et maecenas aliquam.ut labore et dolore magna aliqua.
                 </p>
               </div>
-              <div class="feature-profile">
+              <div class="testimonial-profile">
+                <div class="rating">
+                  
+                </div>
+                <div class="profile-info">
+                  
                   <div>
                     <h3>Lisa Williams</h3>
                     <h4>Product Manager</h4>
@@ -160,14 +208,19 @@
           </div><!-- End testimonial item -->
 
           <div class="swiper-slide">
-            <div class="feature-card">
-              <div class="feature-content">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
                 <p>
                   <i class="bi bi-quote quote-icon"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram.
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram.ut labore et dolore magna aliqua.
                 </p>
               </div>
-              <div class="feature-profile">
+              <div class="testimonial-profile">
+                <div class="rating">
+                  
+                </div>
+                <div class="profile-info">
+                  
                   <div>
                     <h3>Emma Parker</h3>
                     <h4>UX Designer</h4>
@@ -178,14 +231,19 @@
           </div><!-- End testimonial item -->
 
           <div class="swiper-slide">
-            <div class="feature-card">
-              <div class="feature-content">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
                 <p>
                   <i class="bi bi-quote quote-icon"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit.
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit.ut labore et dolore magna aliqua.
                 </p>
               </div>
-              <div class="feature-profile">
+              <div class="testimonial-profile">
+                <div class="rating">
+                  
+                </div>
+                <div class="profile-info">
+                  
                   <div>
                     <h3>David Miller</h3>
                     <h4>Senior Developer</h4>
@@ -196,14 +254,19 @@
           </div><!-- End testimonial item -->
 
           <div class="swiper-slide">
-            <div class="feature-card">
-              <div class="feature-content">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
                 <p>
                   <i class="bi bi-quote quote-icon"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat.
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat.ut labore et dolore magna aliqua.
                 </p>
               </div>
-              <div class="feature-profile">
+              <div class="testimonial-profile">
+                <div class="rating">
+                  
+                </div>
+                <div class="profile-info">
+                  
                   <div>
                     <h3>Michael Davis</h3>
                     <h4>CEO &amp; Founder</h4>
@@ -214,14 +277,19 @@
           </div><!-- End testimonial item -->
 
           <div class="swiper-slide">
-            <div class="feature-card">
-              <div class="feature-content">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
                 <p>
                   <i class="bi bi-quote quote-icon"></i>
-                  Eius ipsam praesentium dolor quaerat inventore rerum odio. Quos laudantium adipisci eius. Accusamus qui iste cupiditate sed temporibus est aspernatur.
+                  Eius ipsam praesentium dolor quaerat inventore rerum odio. Quos laudantium adipisci eius. Accusamus qui iste cupiditate sed temporibus est aspernatur.ut labore et dolore magna aliqua.
                 </p>
               </div>
-              <div class="feature-profile">
+              <div class="testimonial-profile">
+                <div class="rating">
+                  
+                </div>
+                <div class="profile-info">
+                  
                   <div>
                     <h3>Sarah Thompson</h3>
                     <h4>Art Director</h4>
@@ -236,46 +304,24 @@
 
     </div>
 
-  </section><!-- /Features Section -->
+  </section><!-- /Testimonials Section -->
 
     <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
+    <section id="portfolio-details" class="portfolio-details custom-padding1">
 
       <div class="container" data-aos="fade-up">
 
         
         <div class="row justify-content-between gy-4 mt-4">
-
+          <div class="text-center d-block mb-4">
+                <h2>Selamat Datang di Galeri Artikel Jurnalisme Data</h2>
+            </div> 
           <div class="col-lg-12" data-aos="fade-up">
             <div class="portfolio-description">
-              <h2>This is an example of portfolio details</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+                Halaman ini menyajikan kumpulan karya tulis mahasiswa yang mengeksplorasi berbagai isu melalui pendekatan jurnalisme data. Setiap artikel disusun dengan tujuan menghadirkan informasi berbasis data yang akurat, relevan, dan mudah dipahami publik. Melalui tugas ini, mahasiswa tidak hanya mengasah kemampuan menulis jurnalistik, tetapi juga mengembangkan kepekaan terhadap fakta, visualisasi data, dan etika dalam penyajian informasi.</p>
               <p>
-                Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.
-              </p>
-
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <div>
-                  <img src="assets/img/person/person-f-5.webp" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                </div>
-              </div>
-
-              <p>
-                Impedit ipsum quae et aliquid doloribus et voluptatem quasi. Perspiciatis occaecati earum et magnam animi. Quibusdam non qui ea vitae suscipit vitae sunt. Repudiandae incidunt cumque minus deserunt assumenda tempore. Delectus voluptas necessitatibus est.
-              </p>
-
-              <p>
-                Sunt voluptatum sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero. Explicabo et quod necessitatibus similique quis dolor eum. Numquam eaque praesentium rem et qui nesciunt.
-              </p>
+                Silakan telusuri daftar artikel di bawah ini untuk melihat bagaimana data dapat menjadi alat penting dalam membongkar realitas sosial dan memperkuat fungsi kontrol media dalam masyarakat demokratis.</p>
 
             </div>
           </div>
@@ -284,6 +330,59 @@
       </div>
 
     </section><!-- /Portfolio Details Section -->
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio section">
+    
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+    
+              <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+    
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                  <div class="portfolio-card">
+                    <div class="portfolio-image">
+                      <img src="assets/img/illustration/artikel-2024.jpg" class="img-fluid gambar-seragam" alt="" loading="lazy">
+                      <div class="portfolio-overlay">
+                        <div class="portfolio-actions">
+                          <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="portfolio-content">
+                      <span class="category">Artikel</span>
+                      <h3>Artikel Mahasiswa tahun 2024</h3>
+                      <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.</p>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+    
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+                  <div class="portfolio-card">
+                    <div class="portfolio-image">
+                      <img src="assets/img/illustration/artikel-2025.jpg" class="img-fluid gambar-seragam" alt="" loading="lazy">
+                      <div class="portfolio-overlay">
+                        <div class="portfolio-actions">
+                          <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="portfolio-content">
+                      <span class="category">Artikel</span>
+                      <h3>Artikel Mahasiswa Tahun 2025</h3>
+                      <p>Vestibulum id ligula porta felis euismod semper at vulputate.</p>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+    
+              </div><!-- End Portfolio Container -->
+    
+            </div>
+    
+          </div>
+    
+        </section><!-- /Portfolio Section -->
 
   </main>
 
