@@ -80,7 +80,20 @@
         }
       </style>
 
-    
+    <!--jekyll simple search-->
+    <style>
+      .search-results a {
+        text-decoration: none;
+        color: #1a1a1a;
+      }
+      .search-results .card {
+        border: 1px solid #ddd;
+        transition: all 0.3s ease;
+      }
+      .search-results .card:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+    </style>
 
 
 </head>
@@ -130,6 +143,11 @@
     <div class="page-title mt-2">
       
     </div><!-- End Page Title -->
+
+    <div class="container mt-4">
+      <input type="text" id="search-input" placeholder="Cari artikel..." class="form-control mb-4" />
+      <div id="results" class="search-results"></div>
+    </div>
 
     <!-- Faq Section -->
     <section id="faq" class="faq section">
@@ -436,8 +454,26 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  
-  
+
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results'),
+    json: '/Jurnalisme-Data/search.json',
+    searchResultTemplate: `
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title"><a href="{url}">{title}</a></h5>
+          <p class="card-text">{content}</p>
+        </div>
+      </div>
+    `,
+    noResultsText: 'Artikel tidak ditemukan.',
+    limit: 10,
+    fuzzy: false
+  });
+</script>
   
 </body>
 
