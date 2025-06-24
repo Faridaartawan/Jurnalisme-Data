@@ -534,7 +534,7 @@
       const filtered = artikelData.filter(item =>
         item.title.toLowerCase().includes(query) ||
         item.content.toLowerCase().includes(query) ||
-        (item.penulis && item.penulis.toLowerCase().includes(query))
+        (item.penulis && item.penulis.join(', ').toLowerCase().includes(query))
       );
   
       // Tampilkan hasil
