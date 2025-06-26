@@ -5,6 +5,9 @@ fetch("/artikel-2025/list-kategori.json")
     const kategoriSet = new Set();
 
     data.forEach((item, index) => {
+      const penulisGabung = Array.isArray(item.penulis)
+        ? item.penulis.join(", ")
+        : item.penulis;
       const kategoriList = Array.isArray(item.kategori)
         ? item.kategori
         : [item.kategori];
