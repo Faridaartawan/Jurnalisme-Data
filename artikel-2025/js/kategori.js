@@ -1,38 +1,35 @@
-fetch("artikel-2025/list-kategori.json")
+fetch("artikel-2025/js/kategori.js")
   .then((res) => res.json())
   .then((data) => {
-    const wrapper = document.getElementById("artikel-wrapper");
+    const wrapper = document.getElementById("mix-faq");
     const kategoriSet = new Set();
 
-    data.forEach((item) => {
+    data.forEach((item, index) => {
       const kategori = item.kategori.toLowerCase().replace(/\s+/g, "-");
       kategoriSet.add(kategori);
 
       const penulisGabung = item.penulis.join(", ");
-      const slide = document.createElement("div");
-      slide.className = `swiper-slide mix ${kategori}`;
-      slide.innerHTML = `
-          <div class="testimonial-card">
-            <div class="testimonial-content">
-              <p><i class="bi bi-quote quote-icon"></i> ${item.content}</p>
-            </div>
-            <div class="testimonial-profile">
-              <div class="rating"></div>
-              <div class="profile-info">
-                <div>
-                  <h3><a href="${item.url}">${penulisGabung}</a></h3>
-                  <h4>Penulis</h4>
-                </div>
-              </div>
-            </div>
+      const div = document.createElement("div");
+      div.className = `faq-item mix ${kategori}`;
+      div.setAttribute("data-order", item.title.toLowerCase());
+      div.setAttribute("data-kategori", kategori);
+
+      div.innerHTML = `
+          <h3>${String(index + 1).padStart(2, "0")} ${item.title}</h3>
+          <div class="faq-content">
+            <p>Penulis: ${penulisGabung}</p>
+            <p>${item.content}</p>
+            <a href="${
+              item.url
+            }" class="btn btn-sm btn-outline-success mt-2">Baca Selengkapnya</a>
           </div>
         `;
-      wrapper.appendChild(slide);
+      wrapper.appendChild(div);
     });
 
-    // Buat tombol filter kategori
-    const tombolContainer = document.getElementById("kategori-buttons");
-    tombolContainer.innerHTML = `<button class="btn btn-outline-secondary mx-1" data-filter="all">Semua</button>`;
+    
+    const tombolKategori = document.getElementById("kategori-buttons");
+    tombolKategori.innerHTML = `<button class="btn btn-outline-secondary mx-1" data-filter="all">Semua</button>`;
     [...kategoriSet].sort().forEach((k) => {
       const btn = document.createElement("button");
       btn.className = "btn btn-outline-secondary mx-1";
@@ -40,18 +37,12 @@ fetch("artikel-2025/list-kategori.json")
       btn.textContent = k
         .replace(/-/g, " ")
         .replace(/\b\w/g, (c) => c.toUpperCase());
-      tombolContainer.appendChild(btn);
+      tombolKategori.appendChild(btn);
     });
 
-    // Inisialisasi MixItUp
-    mixitup("#artikel-wrapper", {
-      selectors: { target: ".swiper-slide" },
+    
+    mixitup("#mix-faq", {
+      selectors: { target: ".mix" },
       animation: { duration: 300 },
     });
-
-    // Inisialisasi Swiper
-    new Swiper(
-      ".testimonials-slider",
-      JSON.parse(document.querySelector(".swiper-config").textContent)
-    );
   });
