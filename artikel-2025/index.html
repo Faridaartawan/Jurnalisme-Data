@@ -120,6 +120,37 @@
             </div>
           </div>
         </div>
+        <!-- Kategori Buttons -->
+        <div id="kategori-buttons" class="text-center my-4"></div>
+        <!-- Slider untuk artikel -->
+        <div class="testimonials-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 800,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": 1,
+              "spaceBetween": 30,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "768": {
+                  "slidesPerView": 2
+                },
+                "1200": {
+                  "slidesPerView": 3
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper" id="artikel-wrapper"></div>
+          <div class="swiper-pagination"></div>
+        </div>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
@@ -703,5 +734,6 @@
     <script src="assets/js/main.js"></script>
     <script src="artikel-2025/js/search-2025.js" defer></script>
     <script src="assets/vendor/mixitup/mixitup.min.js"></script>
+    <script src="artikel-2025/js/kategori.js"></script>
   </body>
 </html>

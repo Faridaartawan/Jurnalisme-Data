@@ -1,4 +1,4 @@
-fetch("data/list-kategori.json")
+fetch("/artikel-2025/list-kategori.json")
   .then((res) => res.json())
   .then((data) => {
     const wrapper = document.getElementById("artikel-wrapper");
