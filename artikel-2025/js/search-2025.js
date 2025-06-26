@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let artikelData = [];
 
     // 1. Ambil data artikel
-    fetch('/artikel-2025/search_with_author.json')
+    fetch('artikel-2025/search_with_author.json')
       .then(res => res.json())
       .then(data => {
         artikelData = data;
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .catch(error => console.error("Gagal memuat artikel:", error));
 
     // 2. Ambil daftar kata kunci dan tampilkan di <datalist>
-    fetch('/artikel-2025/kata-kunci.json')
+    fetch('artikel-2025/kata-kunci.json')
       .then(res => res.json())
       .then(kataKunci => {
         kataKunci.sort().forEach(word => {
