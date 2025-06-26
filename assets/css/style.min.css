@@ -2135,8 +2135,11 @@ section,
   padding-top: 5px;
 }
 
-.faq .faq-container .faq-item .faq-content p {
-  margin-bottom: 10px;
+.faq .faq-container .faq-item .faq-content {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  padding-top: 5px;
 }
 
 .faq .faq-container .faq-toggle {

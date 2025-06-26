@@ -2587,6 +2587,10 @@ section,
 
 .faq .faq-container .faq-item .faq-content p {
   margin-bottom: 10px;
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+  display: block;
 }
 
 .faq .faq-container .faq-toggle {
