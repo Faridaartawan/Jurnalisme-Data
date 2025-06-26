@@ -1,4 +1,4 @@
-fetch("/artikel-2025/list-kategori copy.json")
+fetch("/artikel-2025/list-kategori-copy.json")
   .then((res) => res.json())
   .then((data) => {
     const wrapper = document.getElementById("mix-faq");
