@@ -29,7 +29,7 @@ fetch("/artikel-2025/list-kategori-copy.json")
       div.setAttribute("data-kategori", kategoriClass.split(" ")[0]);
 
       // (1) Default gambar jika item.image tidak tersedia
-      const gambar = item.image || "assets/img/default.jpg";
+      const gambar = item.image || "assets/img/services/default.webp";
 
       div.innerHTML = `
         <img src="${gambar}" alt="${item.title}" class="img-fluid mb-3 rounded">
