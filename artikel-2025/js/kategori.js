@@ -5,15 +5,25 @@ fetch("/artikel-2025/list-kategori.json")
     const kategoriSet = new Set();
 
     data.forEach((item, index) => {
-      const kategori = item.kategori.toLowerCase().replace(/\s+/g, "-");
-      kategoriSet.add(kategori);
+      const kategoriList = Array.isArray(item.kategori)
+        ? item.kategori
+        : [item.kategori];
 
-      const penulisGabung = item.penulis.join(", ");
+      // Tambahkan semua kategori ke set
+      kategoriList.forEach((k) =>
+        kategoriSet.add(k.toLowerCase().replace(/\s+/g, "-"))
+      );
+
+      // Gabungkan class kategori (misal: "kesehatan sosial")
+      const kategoriClass = kategoriList
+        .map((k) => k.toLowerCase().replace(/\s+/g, "-"))
+        .join(" ");
 
       const div = document.createElement("div");
-      div.className = `faq-item mix ${kategori}`;
-      div.setAttribute("data-order", item.title.toLowerCase()); // untuk sort judul
-      div.setAttribute("data-kategori", kategori); // untuk sort kategori
+      div.className = `faq-item mix ${kategoriClass}`;
+      div.setAttribute("data-order", item.title.toLowerCase());
+      // Ambil satu kategori pertama saja untuk keperluan sorting (data-kategori)
+      div.setAttribute("data-kategori", kategoriClass.split(" ")[0]);
 
       div.innerHTML = `
         <h3>${String(index + 1).padStart(2, "0")} ${item.title}</h3>

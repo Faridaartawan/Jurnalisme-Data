@@ -30,7 +30,7 @@
     ],
     "content": "Food Waste vs Kemiskinan: Di Sumut, jutaan hidup dalam kemiskinan, tapi makanan tetap dibuang. Mandailing Natal jadi penghasil sisa makanan tertinggi (46%). Sebuah ironi yang menuntut kesadaran dan aksi nyata.",
     "url": "artikel-2025/sebutir-nasi-terbuang.html",
-    "kategori": "umum"
+    "kategori": ["umum", "sosial"]
   },
   {
     "title": "Perpustakaan, Tempat yang Kosong di Tengah Kebutuhan Literasi",
@@ -74,7 +74,7 @@
     ],
     "content": "Tahun 2024, curah hujan tinggi memicu banjir besar di Sumatera Utara. Ribuan warga terdampak, infrastruktur lumpuh. Simak data, dampak, dan solusi mitigasi banjir.",
     "url": "artikel-2025/derasnya-hujan-derasnya-masalah.html",
-    "kategori": "lingkungan"
+    "kategori": ["lingkungan", "sosial"]
   },
   {
     "title": "Ketimpangan Akses Deteksi Dini Kanker Serviks pada Perempuan di Indonesia",
@@ -85,7 +85,7 @@
     ],
     "content": "Kanker serviks masih jadi ancaman serius. Rendahnya deteksi dini membuat banyak kasus baru ditemukan saat stadium lanjut.",
     "url": "artikel-2025/ketimpangan-akses-deteksi-dini-kanker.html",
-    "kategori": "kesehatan"
+    "kategori": ["kesehatan", "sosial"]
   },
   {
     "title": "”Antara Buku dan Kubur. Realita Bunuh Diri Mahasiswa”",
@@ -96,7 +96,7 @@
     ],
     "content": "Banyak mahasiswa menghadapi tekanan akademik, sosial, dan mental yang tak terlihat. Kasus bunuh diri terus meningkat—sebuah realita yang tak boleh diabaikan.",
     "url": "artikel-2025/antara-buku-dan-kubur.html",
-    "kategori": "kesehatan mental"
+    "kategori": ["kesehatan", "pendidikan"]
   },
   {
     "title": "Medan dan Timbulan Sampahnya",
@@ -107,7 +107,7 @@
     ],
     "content": "Tahun 2024, 477 juta ton sampah menumpuk di Medan. Di balik angka itu, ada kisah nelayan, krisis lingkungan, dan upaya bersama untuk kota yang lebih bersih.",
     "url": "artikel-2025/medan-dan-timbulan-sampahnya.html",
-    "kategori": "lingkungan"
+    "kategori": ["lingkungan", "sosial"]
   },
   {
     "title": "Korupsi di Dunia Pendidikan, Anak Bangsa Jadi Korban",
@@ -118,7 +118,7 @@
     ],
     "content": "Meski anggaran pendidikan Indonesia mencapai Rp665 triliun, ribuan anak putus sekolah. Dana bantuan bocor, dan korupsi menyandera masa depan mereka.",
     "url": "artikel-2025/korupsi-di-dunia-pendidikan.html",
-    "kategori": "sosial"
+    "kategori": ["sosial", "pendidikan"]
   },
   {
     "title": "Dating Apps Antara Cinta dan Bahaya di Balik Layar",
@@ -129,7 +129,7 @@
     ],
     "content": "Pengguna aplikasi kencan terus meningkat, tapi 56% pernah mengalami pengalaman negatif. Swipe kanan bisa jadi awal cinta—atau awal bencana.",
     "url": "artikel-2025/dating-apps.html",
-    "kategori": "umum"
+    "kategori": ["umum", "sosial"]
   },
   {
     "title": "Running Culture di Kalangan Gen Z: Antara Hobi, Gaya Hidup, dan Dompet yang Menipis",
