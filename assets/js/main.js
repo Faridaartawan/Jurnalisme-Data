@@ -204,3 +204,20 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+function encodeMail(username, domain) {
+  const u = username.replace(/\./g, '&#46;');
+  const d = domain.replace(/\./g, '&#46;');
+  return u + '&#64;' + d;
+}
+
+function buildMailLink(id, username, domain) {
+  const container = document.getElementById(id);
+  const address = username + '@' + domain;
+  const href = "https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=" + address;
+  const encoded = encodeMail(username, domain);
+  container.innerHTML = `<a href="${href}"><i class="bi bi-envelope-at"></i></a>`;
+}
+
+buildMailLink("email-farida", "farida.hanim", "usu.ac.id");
+buildMailLink("email-emilia", "emilia.ramadhani", "usu.ac.id");
